@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Visualizer | Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <div class="cursor"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon">∑</span> MathViz Portfolio
+        </div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#tech">Tech Stack</a>
+            <a href="index.html" class="btn-primary-outline">Live Demo</a>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Visualizing Mathematics <br><span class="highlight">Through Code.</span></h1>
+            <p class="hero-subtitle">An interactive, comprehensive web application designed to bring complex
+                mathematical concepts to life using purely vanilla web technologies and math.js.</p>
+            <div class="hero-actions">
+                <a href="index.html" class="btn-primary">Launch Application 🚀</a>
+                <a href="#features" class="btn-secondary">Explore Features ↓</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-math math-1">∫f(x)dx</div>
+            <div class="floating-math math-2">e^(iπ) + 1 = 0</div>
+            <div class="floating-math math-3">A × B</div>
+            <div class="floating-math math-4">△</div>
+            <div class="glass-card main-glass">
+                <div class="mockup-header">MathViz Preview</div>
+                <div class="mockup-body">
+                    <div class="sine-wave"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section about" id="about">
+        <div class="section-container">
+            <h2 class="section-title">About The Project</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>The <strong>Interactive Math Visualizer</strong> is a personal passion project aiming to bridge
+                        the gap between abstract mathematical theories and intuitive visual understanding.</p>
+                    <p>Built as a single-page application without heavy UI frameworks, it demonstrates proficiency in
+                        DOM manipulation, HTML5 Canvas rendering, and algorithmic implementation.</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>8+</h3>
+                        <p>Core Modules</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>100%</h3>
+                        <p>Client-side</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Canvas</h3>
+                        <p>Powered</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section features" id="features">
+        <div class="section-container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Function Plotter</h3>
+                    <p>Dynamic 2D graphing utility supporting multiple overlapping functions, custom bounds, and
+                        interactivity.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌀</div>
+                    <h3>Fractal Explorer</h3>
+                    <p>High-performance rendering of Mandelbrot and Julia sets using Canvas API manipulation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">∫</div>
+                    <h3>Calculus Engine</h3>
+                    <p>Visual representation of derivatives, definite integrals, and Riemann sum approximations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔢</div>
+                    <h3>Matrix Operations</h3>
+                    <p>Complete linear algebra suite including addition, multiplication, determinants, and inversions.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Statistical Analysis</h3>
+                    <p>Instant data visualization through dynamically generated histograms, bar charts, and line graphs.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">〰️</div>
+                    <h3>Trigonometry</h3>
+                    <p>Interactive unit circle animation synced with real-time waveform generation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section tech" id="tech">
+        <div class="section-container">
+            <h2 class="section-title">Technologies Used</h2>
+            <div class="tech-stack">
+                <div class="tech-item hover-html">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                    <span>HTML5</span>
+                </div>
+                <div class="tech-item hover-css">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                    <span>CSS3</span>
+                </div>
+                <div class="tech-item hover-js">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JavaScript">
+                    <span>Vanilla JS</span>
+                </div>
+                <div class="tech-item hover-php">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP 8.0">
+                    <span>PHP 8.0</span>
+                </div>
+                <div class="tech-item hover-canvas">
+                    <div class="canvas-icon">C</div>
+                    <span>HTML Canvas</span>
+                </div>
+                <div class="tech-item hover-mathjs">
+                    <div class="math-icon">∑</div>
+                    <span>Math.js</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Ready to see it in action?</h2>
+        <p>Experience the interactive math visualizer firsthand.</p>
+        <a href="index.html" class="btn-primary btn-large">Open Application</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Math Visualizer Portfolio. Built with precision and code.</p>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
