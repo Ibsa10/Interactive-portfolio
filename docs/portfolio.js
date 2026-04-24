@@ -79,3 +79,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Profile Image Upload Preview
+const profileUpload = document.getElementById('profile-upload');
+const profilePreview = document.getElementById('profile-preview');
+
+if (profileUpload && profilePreview) {
+    profileUpload.addEventListener('change', function(e) {
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                profilePreview.src = event.target.result;
+                
+                // Add a small animation when image changes
+                gsap.from(profilePreview, {
+                    scale: 0.8,
+                    opacity: 0.5,
+                    duration: 0.5,
+                    ease: "back.out(1.7)"
+                });
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+}
